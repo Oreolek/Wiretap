@@ -11,6 +11,9 @@ class Wiretap {
 	 *
 	 **/
 	public static function updateTable( &$title, &$article, &$output, &$user, $request, $mediaWiki ) {
+    if (!$user->isLoggedIn()) {
+      return false;
+    }
 
 		$output->enableClientCache( false );
 		$output->addMeta( 'http:Pragma', 'no-cache' );
