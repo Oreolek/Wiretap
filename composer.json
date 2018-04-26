@@ -1,0 +1,9 @@
+{
+	"name": "oreolek/wiretap",
+	"type": "mediawiki-extension",
+	"description": "MediaWiki extension that lets you store and query structured data within wiki pages",
+	"require": {
+		"php": ">=5.5.0",
+		"composer/installers": "1.*,>=1.0.1"
+	}
+}
