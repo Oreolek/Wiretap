@@ -137,7 +137,7 @@ class SpecialWiretap extends SpecialPage {
 			$html .= $pager->getNavigationBar();
 		}
 		else {
-			$html .= '<p>' . wfMessage('listusers-noresult') . '</p>';
+			$html .= '<p>' . wfMessageHTML('listusers-noresult') . '</p>';
 		}
 		$wgOut->addHTML( $html );
 	}
